@@ -77,7 +77,7 @@ $s1[$acclass[acclassid]] =$total;
 foreach($shouru as $k=>$v){
 echo "<tr>"; 
 if(isset($s1[$k])){
-  echo "<td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>".number_format($s1[$k],)."</font></td>";$ys1=$ys1+$s1[$k];
+  echo "<td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>".number_format($s1[$k],2)."</font></td>";$ys1=$ys1+$s1[$k];
 }else{
 
 echo "<td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>0</font></td>";
