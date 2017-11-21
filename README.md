@@ -30,3 +30,8 @@ Demo：http://salitt.com/site/account
 6.支持2位小数金额.
 
 7.修复add.php手动刷新重复提交数据
+
+2017/11/21
+
+1. 更新annual_stat.php，使其支持按年统计最终能够保留2位小数输出，避免出现多位小数从而影响整体布局。
+2. 关闭PHP debug调试，避免最新mysql版本出现提示换用mysqli或PDO的问题。
