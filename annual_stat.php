@@ -77,7 +77,11 @@ $s1[$acclass[acclassid]] =$total;
 foreach($shouru as $k=>$v){
 echo "<tr>"; 
 if(isset($s1[$k])){
+<<<<<<< HEAD
   echo "<td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>".number_format($s1[$k],2)."</font></td>";$ys1=$ys1+$s1[$k];
+=======
+  echo "<td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>".$s1[$k]."</font></td>";$ys1=$ys1+$s1[$k];
+>>>>>>> parent of f6f7527... 更新annual_stat.php，解决按年统计湿统计结果小数位数超过2位，影响整体显示的问题
 }else{
 
 echo "<td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>0</font></td>";
@@ -97,7 +101,7 @@ $s2[$acclass[acclassid]] =$total;
 foreach($zhichu as $k=>$v){
 echo "<tr>"; 
 if(isset($s2[$k])){
-  echo "<td align='left' bgcolor='#FFFFFF'><font color='red'>".number_format($s2[$k],2)."</font></td>";$yf1=$yf1+$s2[$k];
+  echo "<td align='left' bgcolor='#FFFFFF'><font color='red'>".$s2[$k]."</font></td>";$yf1=$yf1+$s2[$k];
 
 }else{
 
@@ -105,9 +109,9 @@ echo "<td align='left' bgcolor='#FFFFFF'><font color='red'>0</font></td>";
 				}echo "</tr>"; 
 }
 if($ys1==""){ $ys1="0";} if($yf1==""){$yf1="0";}$yz=$ys1-$yf1;
-echo "<tr><td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>".number_format($ys1,2)."</font></td></tr>
-<tr><td align='left' bgcolor='#FFFFFF'><font color='red'>".number_format($yf1,2)."</font></td></tr>
-<tr><td align='left' bgcolor='#FFFFFF'><font>".number_format($yz,2)."</font></td></tr>
+echo "<tr><td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>".$ys1."</font></td></tr>
+<tr><td align='left' bgcolor='#FFFFFF'><font color='red'>".$yf1."</font></td></tr>
+<tr><td align='left' bgcolor='#FFFFFF'><font>".$yz."</font></td></tr>
 ";
 ?>
 </table></div>
@@ -138,7 +142,7 @@ $s1[$acclass[acclassid]] =$total;
 foreach($shouru as $k=>$v){
 echo "<tr>";
 if(isset($s1[$k])){
-  echo "<td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>".number_format($s1[$k],2)."</font></td>";$ys2=$ys2+$s1[$k];
+  echo "<td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>".$s1[$k]."</font></td>";$ys2=$ys2+$s1[$k];
 }else{
 
 echo "<td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>0</font></td>";
@@ -158,7 +162,7 @@ $s2[$acclass[acclassid]] =$total;
 foreach($zhichu as $k=>$v){
 echo "<tr>";
 if(isset($s2[$k])){
-  echo "<td align='left' bgcolor='#FFFFFF'><font color='red'>".number_format($s2[$k],2)."</font></td>";$yf2=$yf2+$s2[$k];
+  echo "<td align='left' bgcolor='#FFFFFF'><font color='red'>".$s2[$k]."</font></td>";$yf2=$yf2+$s2[$k];
 
 }else{
 
@@ -168,9 +172,9 @@ echo "</tr>";
 }
 
 if($ys2==""){ $ys2="0";} if($yf2==""){$yf2="0";}$yz=$ys2-$yf2;
-echo "<tr><td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>".number_format($ys2,2)."</font></td></tr>
-<tr><td align='left' bgcolor='#FFFFFF'><font color='red'>".number_format($yf2,2)."</font></td></tr>
-<tr><td align='left' bgcolor='#FFFFFF'><font>".number_format($yz,2)."</font></td></tr>
+echo "<tr><td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>".$ys2."</font></td></tr>
+<tr><td align='left' bgcolor='#FFFFFF'><font color='red'>".$yf2."</font></td></tr>
+<tr><td align='left' bgcolor='#FFFFFF'><font>".$yz."</font></td></tr>
 ";
 ?>
 </table></div>
@@ -197,7 +201,7 @@ $s1[$acclass[acclassid]] =$total;
 foreach($shouru as $k=>$v){
 echo "<tr>";
 if(isset($s1[$k])){
-  echo "<td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>".number_format($s1[$k],2)."</font></td>";$ys3=$ys3+$s1[$k];
+  echo "<td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>".$s1[$k]."</font></td>";$ys3=$ys3+$s1[$k];
 }else{
 
 echo "<td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>0</font></td>";
@@ -217,7 +221,7 @@ $s2[$acclass[acclassid]] =$total;
 foreach($zhichu as $k=>$v){
 echo "<tr>";
 if(isset($s2[$k])){
-  echo "<td align='left' bgcolor='#FFFFFF'><font color='red'>".number_format($s2[$k],2)."</font></td>";$yf3=$yf3+$s2[$k];
+  echo "<td align='left' bgcolor='#FFFFFF'><font color='red'>".$s2[$k]."</font></td>";$yf3=$yf3+$s2[$k];
 
 }else{
 
@@ -227,9 +231,9 @@ echo "</tr>";
 }
 
 if($ys3==""){ $ys3="0";} if($yf3==""){$yf3="0";}$yz=$ys3-$yf3;
-echo "<tr><td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>".number_format($ys3,2)."</font></td></tr>
-<tr><td align='left' bgcolor='#FFFFFF'><font color='red'>".number_format($yf3,2)."</font></td></tr>
-<tr><td align='left' bgcolor='#FFFFFF'><font>".number_format($yz,2)."</font></td></tr>
+echo "<tr><td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>".$ys3."</font></td></tr>
+<tr><td align='left' bgcolor='#FFFFFF'><font color='red'>".$yf3."</font></td></tr>
+<tr><td align='left' bgcolor='#FFFFFF'><font>".$yz."</font></td></tr>
 ";
 ?>
 </table></div>
@@ -255,7 +259,7 @@ $s1[$acclass[acclassid]] =$total;
 foreach($shouru as $k=>$v){
 echo "<tr>";
 if(isset($s1[$k])){
-  echo "<td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>".number_format($s1[$k],2)."</font></td>";$ys4=$ys4+$s1[$k];
+  echo "<td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>".$s1[$k]."</font></td>";$ys4=$ys4+$s1[$k];
 }else{
 
 echo "<td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>0</font></td>";
@@ -275,7 +279,7 @@ $s2[$acclass[acclassid]] =$total;
 foreach($zhichu as $k=>$v){
 echo "<tr>";
 if(isset($s2[$k])){
-  echo "<td align='left' bgcolor='#FFFFFF'><font color='red'>".number_format($s2[$k],2)."</font></td>";$yf4=$yf4+$s2[$k];
+  echo "<td align='left' bgcolor='#FFFFFF'><font color='red'>".$s2[$k]."</font></td>";$yf4=$yf4+$s2[$k];
 
 }else{
 
@@ -285,9 +289,9 @@ echo "</tr>";
 }
 
 if($ys4==""){ $ys4="0";} if($yf4==""){$yf4="0";}$yz=$ys4-$yf4;
-echo "<tr><td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>".number_format($ys4,2)."</font></td></tr>
-<tr><td align='left' bgcolor='#FFFFFF'><font color='red'>".number_format($yf4,2)."</font></td></tr>
-<tr><td align='left' bgcolor='#FFFFFF'><font>".number_format($yz,2)."</font></td></tr>
+echo "<tr><td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>".$ys4."</font></td></tr>
+<tr><td align='left' bgcolor='#FFFFFF'><font color='red'>".$yf4."</font></td></tr>
+<tr><td align='left' bgcolor='#FFFFFF'><font>".$yz."</font></td></tr>
 ";
 ?>
 </table></div>
@@ -312,7 +316,7 @@ $s1[$acclass[acclassid]] =$total;
 foreach($shouru as $k=>$v){
 echo "<tr>";
 if(isset($s1[$k])){
-  echo "<td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>".number_format($s1[$k],2)."</font></td>";$ys5=$ys5+$s1[$k];
+  echo "<td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>".$s1[$k]."</font></td>";$ys5=$ys5+$s1[$k];
 }else{
 
 echo "<td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>0</font></td>";
@@ -332,7 +336,7 @@ $s2[$acclass[acclassid]] =$total;
 foreach($zhichu as $k=>$v){
 echo "<tr>";
 if(isset($s2[$k])){
-  echo "<td align='left' bgcolor='#FFFFFF'><font color='red'>".number_format($s2[$k],2)."</font></td>";$yf5=$yf5+$s2[$k];
+  echo "<td align='left' bgcolor='#FFFFFF'><font color='red'>".$s2[$k]."</font></td>";$yf5=$yf5+$s2[$k];
 
 }else{
 
@@ -342,9 +346,9 @@ echo "</tr>";
 }
 
 if($ys5==""){ $ys5="0";} if($yf5==""){$yf5="0";}$yz=$ys5-$yf5;
-echo "<tr><td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>".number_format($ys5,2)."</font></td></tr>
-<tr><td align='left' bgcolor='#FFFFFF'><font color='red'>".number_format($yf5,2)."</font></td></tr>
-<tr><td align='left' bgcolor='#FFFFFF'><font>".number_format($yz,2)."</font></td></tr>
+echo "<tr><td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>".$ys5."</font></td></tr>
+<tr><td align='left' bgcolor='#FFFFFF'><font color='red'>".$yf5."</font></td></tr>
+<tr><td align='left' bgcolor='#FFFFFF'><font>".$yz."</font></td></tr>
 ";
 ?>
 </table></div>
@@ -370,7 +374,7 @@ $s1[$acclass[acclassid]] =$total;
 foreach($shouru as $k=>$v){
 echo "<tr>";
 if(isset($s1[$k])){
-  echo "<td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>".number_format($s1[$k],2)."</font></td>";$ys6=$ys6+$s1[$k];
+  echo "<td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>".$s1[$k]."</font></td>";$ys6=$ys6+$s1[$k];
 }else{
 
 echo "<td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>0</font></td>";
@@ -390,7 +394,7 @@ $s2[$acclass[acclassid]] =$total;
 foreach($zhichu as $k=>$v){
 echo "<tr>";
 if(isset($s2[$k])){
-  echo "<td align='left' bgcolor='#FFFFFF'><font color='red'>".number_format($s2[$k],2)."</font></td>";$yf6=$yf6+$s2[$k];
+  echo "<td align='left' bgcolor='#FFFFFF'><font color='red'>".$s2[$k]."</font></td>";$yf6=$yf6+$s2[$k];
 
 }else{
 
@@ -400,9 +404,9 @@ echo "</tr>";
 }
 
 if($ys6==""){ $ys6="0";} if($yf6==""){$yf6="0";}$yz=$ys6-$yf6;
-echo "<tr><td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>".number_format($ys6,2)."</font></td></tr>
-<tr><td align='left' bgcolor='#FFFFFF'><font color='red'>".number_format($yf6,2)."</font></td></tr>
-<tr><td align='left' bgcolor='#FFFFFF'><font>".number_format($yz,2)."</font></td></tr>
+echo "<tr><td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>".$ys6."</font></td></tr>
+<tr><td align='left' bgcolor='#FFFFFF'><font color='red'>".$yf6."</font></td></tr>
+<tr><td align='left' bgcolor='#FFFFFF'><font>".$yz."</font></td></tr>
 ";
 ?>
 </table></div>
@@ -429,7 +433,7 @@ $s1[$acclass[acclassid]] =$total;
 foreach($shouru as $k=>$v){
 echo "<tr>";
 if(isset($s1[$k])){
-  echo "<td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>".number_format($s1[$k],2)."</font></td>";$ys7=$ys7+$s1[$k];
+  echo "<td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>".$s1[$k]."</font></td>";$ys7=$ys7+$s1[$k];
 }else{
 
 echo "<td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>0</font></td>";
@@ -449,7 +453,7 @@ $s2[$acclass[acclassid]] =$total;
 foreach($zhichu as $k=>$v){
 echo "<tr>";
 if(isset($s2[$k])){
-  echo "<td align='left' bgcolor='#FFFFFF'><font color='red'>".number_format($s2[$k],2)."</font></td>";$yf7=$yf7+$s2[$k];
+  echo "<td align='left' bgcolor='#FFFFFF'><font color='red'>".$s2[$k]."</font></td>";$yf7=$yf7+$s2[$k];
 
 }else{
 
@@ -459,9 +463,9 @@ echo "</tr>";
 }
 
 if($ys7==""){ $ys7="0";} if($yf7==""){$yf7="0";}$yz=$ys7-$yf7;
-echo "<tr><td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>".number_format($ys7,2)."</font></td></tr>
-<tr><td align='left' bgcolor='#FFFFFF'><font color='red'>".number_format($yf7,2)."</font></td></tr>
-<tr><td align='left' bgcolor='#FFFFFF'><font>".number_format($yz,2)."</font></td></tr>
+echo "<tr><td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>".$ys7."</font></td></tr>
+<tr><td align='left' bgcolor='#FFFFFF'><font color='red'>".$yf7."</font></td></tr>
+<tr><td align='left' bgcolor='#FFFFFF'><font>".$yz."</font></td></tr>
 ";
 ?>
 </table></div>
@@ -488,7 +492,7 @@ $s1[$acclass[acclassid]] =$total;
 foreach($shouru as $k=>$v){
 echo "<tr>";
 if(isset($s1[$k])){
-  echo "<td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>".number_format($s1[$k],2)."</font></td>";$ys8=$ys8+$s1[$k];
+  echo "<td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>".$s1[$k]."</font></td>";$ys8=$ys8+$s1[$k];
 }else{
 
 echo "<td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>0</font></td>";
@@ -508,7 +512,7 @@ $s2[$acclass[acclassid]] =$total;
 foreach($zhichu as $k=>$v){
 echo "<tr>";
 if(isset($s2[$k])){
-  echo "<td align='left' bgcolor='#FFFFFF'><font color='red'>".number_format($s2[$k],2)."</font></td>";$yf8=$yf8+$s2[$k];
+  echo "<td align='left' bgcolor='#FFFFFF'><font color='red'>".$s2[$k]."</font></td>";$yf8=$yf8+$s2[$k];
 
 }else{
 
@@ -518,9 +522,9 @@ echo "</tr>";
 }
 
 if($ys8==""){ $ys8="0";} if($yf8==""){$yf8="0";}$yz=$ys8-$yf8;
-echo "<tr><td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>".number_format($ys8,2)."</font></td></tr>
-<tr><td align='left' bgcolor='#FFFFFF'><font color='red'>".number_format($yf8,2)."</font></td></tr>
-<tr><td align='left' bgcolor='#FFFFFF'><font>".number_format($yz,2)."</font></td></tr>
+echo "<tr><td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>".$ys8."</font></td></tr>
+<tr><td align='left' bgcolor='#FFFFFF'><font color='red'>".$yf8."</font></td></tr>
+<tr><td align='left' bgcolor='#FFFFFF'><font>".$yz."</font></td></tr>
 ";
 ?>
 </table></div>
@@ -546,7 +550,7 @@ $s1[$acclass[acclassid]] =$total;
 foreach($shouru as $k=>$v){
 echo "<tr>";
 if(isset($s1[$k])){
-  echo "<td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>".number_format($s1[$k],2)."</font></td>";$ys9=$ys9+$s1[$k];
+  echo "<td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>".$s1[$k]."</font></td>";$ys9=$ys9+$s1[$k];
 }else{
 
 echo "<td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>0</font></td>";
@@ -566,7 +570,7 @@ $s2[$acclass[acclassid]] =$total;
 foreach($zhichu as $k=>$v){
 echo "<tr>";
 if(isset($s2[$k])){
-  echo "<td align='left' bgcolor='#FFFFFF'><font color='red'>".number_format($s2[$k],2)."</font></td>";$yf9=$yf9+$s2[$k];
+  echo "<td align='left' bgcolor='#FFFFFF'><font color='red'>".$s2[$k]."</font></td>";$yf9=$yf9+$s2[$k];
 
 }else{
 
@@ -576,9 +580,9 @@ echo "</tr>";
 }
 
 if($ys9==""){ $ys9="0";} if($yf9==""){$yf9="0";}$yz=$ys9-$yf9;
-echo "<tr><td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>".number_format($ys9,2)."</font></td></tr>
-<tr><td align='left' bgcolor='#FFFFFF'><font color='red'>".number_format($yf9,2)."</font></td></tr>
-<tr><td align='left' bgcolor='#FFFFFF'><font>".number_format($yz,2)."</font></td></tr>
+echo "<tr><td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>".$ys9."</font></td></tr>
+<tr><td align='left' bgcolor='#FFFFFF'><font color='red'>".$yf9."</font></td></tr>
+<tr><td align='left' bgcolor='#FFFFFF'><font>".$yz."</font></td></tr>
 ";
 ?>
 </table></div>
@@ -607,7 +611,7 @@ $s1[$acclass[acclassid]] =$total;
 foreach($shouru as $k=>$v){
 echo "<tr>";
 if(isset($s1[$k])){
-  echo "<td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>".number_format($s1[$k],2)."</font></td>";$ys10=$ys10+$s1[$k];
+  echo "<td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>".$s1[$k]."</font></td>";$ys10=$ys10+$s1[$k];
 }else{
 
 echo "<td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>0</font></td>";
@@ -627,7 +631,7 @@ $s2[$acclass[acclassid]] =$total;
 foreach($zhichu as $k=>$v){
 echo "<tr>";
 if(isset($s2[$k])){
-  echo "<td align='left' bgcolor='#FFFFFF'><font color='red'>".number_format($s2[$k],2)."</font></td>";$yf10=$yf10+$s2[$k];
+  echo "<td align='left' bgcolor='#FFFFFF'><font color='red'>".$s2[$k]."</font></td>";$yf10=$yf10+$s2[$k];
 
 }else{
 
@@ -637,9 +641,9 @@ echo "</tr>";
 }
 
 if($ys10==""){ $ys10="0";} if($yf10==""){$yf10="0";}$yz=$ys10-$yf10;
-echo "<tr><td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>".number_format($ys10,2)."</font></td></tr>
-<tr><td align='left' bgcolor='#FFFFFF'><font color='red'>".number_format($yf10,2)."</font></td></tr>
-<tr><td align='left' bgcolor='#FFFFFF'><font>".number_format($yz,2)."</font></td></tr>
+echo "<tr><td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>".$ys10."</font></td></tr>
+<tr><td align='left' bgcolor='#FFFFFF'><font color='red'>".$yf10."</font></td></tr>
+<tr><td align='left' bgcolor='#FFFFFF'><font>".$yz."</font></td></tr>
 ";
 ?>
 </table></div>
@@ -667,7 +671,7 @@ $s1[$acclass[acclassid]] =$total;
 foreach($shouru as $k=>$v){
 echo "<tr>";
 if(isset($s1[$k])){
-  echo "<td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>".number_format($s1[$k],2)."</font></td>";$ys11=$ys11+$s1[$k];
+  echo "<td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>".$s1[$k]."</font></td>";$ys11=$ys11+$s1[$k];
 }else{
 
 echo "<td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>0</font></td>";
@@ -687,7 +691,7 @@ $s2[$acclass[acclassid]] =$total;
 foreach($zhichu as $k=>$v){
 echo "<tr>";
 if(isset($s2[$k])){
-  echo "<td align='left' bgcolor='#FFFFFF'><font color='red'>".number_format($s2[$k],2)."</font></td>";$yf11=$yf11+$s2[$k];
+  echo "<td align='left' bgcolor='#FFFFFF'><font color='red'>".$s2[$k]."</font></td>";$yf11=$yf11+$s2[$k];
 
 }else{
 
@@ -697,9 +701,9 @@ echo "</tr>";
 }
 
 if($ys11==""){ $ys11="0";} if($yf11==""){$yf11="0";}$yz=$ys11-$yf11;
-echo "<tr><td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>".number_format($ys11,2)."</font></td></tr>
-<tr><td align='left' bgcolor='#FFFFFF'><font color='red'>".number_format($yf11,2)."</font></td></tr>
-<tr><td align='left' bgcolor='#FFFFFF'><font>".number_format($yz,2)."</font></td></tr>
+echo "<tr><td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>".$ys11."</font></td></tr>
+<tr><td align='left' bgcolor='#FFFFFF'><font color='red'>".$yf11."</font></td></tr>
+<tr><td align='left' bgcolor='#FFFFFF'><font>".$yz."</font></td></tr>
 ";
 ?>
 </table></div>
@@ -726,7 +730,7 @@ $s1[$acclass[acclassid]] =$total;
 foreach($shouru as $k=>$v){
 echo "<tr>";
 if(isset($s1[$k])){
-  echo "<td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>".number_format($s1[$k],2)."</font></td>";$ys12=$ys12+$s1[$k];
+  echo "<td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>".$s1[$k]."</font></td>";$ys12=$ys12+$s1[$k];
 }else{
 
 echo "<td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>0</font></td>";
@@ -746,7 +750,7 @@ $s2[$acclass[acclassid]] =$total;
 foreach($zhichu as $k=>$v){
 echo "<tr>";
 if(isset($s2[$k])){
-  echo "<td align='left' bgcolor='#FFFFFF'><font color='red'>".number_format($s2[$k],2)."</font></td>";$yf12=$yf12+$s2[$k];
+  echo "<td align='left' bgcolor='#FFFFFF'><font color='red'>".$s2[$k]."</font></td>";$yf12=$yf12+$s2[$k];
 
 }else{
 
@@ -756,9 +760,9 @@ echo "</tr>";
 }
 
 if($ys12==""){ $ys12="0";} if($yf12==""){$yf12="0";}$yz=$ys12-$yf12;
-echo "<tr><td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>".number_format($ys12,2)."</font></td></tr>
-<tr><td align='left' bgcolor='#FFFFFF'><font color='red'>".number_format($yf12,2)."</font></td></tr>
-<tr><td align='left' bgcolor='#FFFFFF'><font>".number_format($yz,2)."</font></td></tr>
+echo "<tr><td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>".$ys12."</font></td></tr>
+<tr><td align='left' bgcolor='#FFFFFF'><font color='red'>".$yf12."</font></td></tr>
+<tr><td align='left' bgcolor='#FFFFFF'><font>".$yz."</font></td></tr>
 ";
 ?>
 </table></div>
@@ -785,7 +789,7 @@ $s1[$acclass[acclassid]] =$total;
 foreach($shouru as $k=>$v){
 echo "<tr>";
 if(isset($s1[$k])){
-  echo "<td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>".number_format($s1[$k],2)."</font></td>";$ns=$ns+$s1[$k];
+  echo "<td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>".$s1[$k]."</font></td>";$ns=$ns+$s1[$k];
 }else{
 
 echo "<td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>0</font></td>";
@@ -805,7 +809,7 @@ $s2[$acclass[acclassid]] =$total;
 foreach($zhichu as $k=>$v){
 echo "<tr>";
 if(isset($s2[$k])){
-  echo "<td align='left' bgcolor='#FFFFFF'><font color='red'>".number_format($s2[$k],2)."</font></td>";$nf=$nf+$s2[$k];
+  echo "<td align='left' bgcolor='#FFFFFF'><font color='red'>".$s2[$k]."</font></td>";$nf=$nf+$s2[$k];
 
 }else{
 
@@ -815,9 +819,9 @@ echo "</tr>";
 }
 
 if($ns==""){ $ns="0";} if($nf==""){$nf="0";}$yz=$ns-$nf;
-echo "<tr><td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>".number_format($ns,2)."</font></td></tr>
-<tr><td align='left' bgcolor='#FFFFFF'><font color='red'>".number_format($nf,2)."</font></td></tr>
-<tr><td align='left' bgcolor='#FFFFFF'><font>".number_format($yz,2)."</font></td></tr>
+echo "<tr><td align='left' bgcolor='#FFFFFF'><font color='MediumSeaGreen'>".$ns."</font></td></tr>
+<tr><td align='left' bgcolor='#FFFFFF'><font color='red'>".$nf."</font></td></tr>
+<tr><td align='left' bgcolor='#FFFFFF'><font>".$yz."</font></td></tr>
 ";
 ?>
 </table></div>
